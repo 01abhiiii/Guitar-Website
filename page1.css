@@ -43,7 +43,8 @@ a{
     max-width: 1180px;
     margin-inline: auto;
     padding: var(--padding-inline-sectio);
-
+    overflow: hidden;
+    
 }
 .flex{
     display: flex;
@@ -93,6 +94,10 @@ ul{
 }
 .nav-bar{
     justify-content: space-between;
+    position: relative;
+}
+.nav-toggle{
+    display: none;
 }
 .nav-write{
     gap:40px;
@@ -114,12 +119,18 @@ ul{
     display: flex;
  }
 .header-left{
-    padding-top: 200px;
+    max-width: 40vw;
+}
+.header-right img{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
 }
 .logo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 7px;
 }
 .company-section{
     padding-bottom: 20px;
@@ -128,21 +139,22 @@ ul{
 .features{
     border-top: 2px solid var(--primary-text-color);
     text-align:center;
-    padding: 60px var(--padding-inline-section) 0px;
+    padding: 60px var(--padding-inline-section) 20px;
 }
 .features h2{
     margin-bottom: 20px;
 }
 /* features option */
 .feature-opt{
-    margin-top: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
 .feature-box{
     text-align: center;
     gap: 20px;
     padding-top:10px ;
     height: 320px;
-    width: 400px ;
+    width: 391px ;
     justify-content: space-evenly;
 }
 /* big features  */
@@ -183,7 +195,11 @@ ul{
     align-items: start;
     gap: 5px;
 }
-footer{
+.pad{
+    padding: 80px var(--padding-inline-section);
+    
+}
+.last-footer{
     background-color: #ebf2fa;
     align-items:start;
 }
