@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockiesHub</title>
     <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -16,12 +18,12 @@
             </div>
         </div>
         </div>
-        <div class="nav-bar container flex">
+        <div class="nav-bar container flex sticky">
             <div class="nav-logo flex">
                 <img src="2nd.png" alt="Company Logo">
                 <h1>RokiesGuitar</h1>
             </div>
-            <div class="nav-link">
+            <div class="nav-link" id="nav-link">
                 <ul class="nav-write flex">
                     <li><a class="hover-link" href="#">Products</a></li>
                     <li><a class="hover-link" href="#">Customer</a></li>
@@ -29,22 +31,25 @@
                     <li><a class="hover-link" href="#">Resources</a></li>
                     <li><a class="hover-link secondary-button" href="#">Sign in</a></li>
                     <li><a class="hover-link primary-button" href="#">Sign up</a></li>
-                </un>
-            </div>
+                </ul>   
+             </div>
+             <a href="#" class="hover-link nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+             </a>
         </div>
-
-
     </header>
 
     <main>
         <!-- 1st section -->
         <div class="hero-sec container">
-            <div class="header-left">
+            <div class="header-left flex">
+                <div class="header-left-item">
                 <h2>We Provide's</h2>
                 <p>Music doesn't lie. If here is something that needs to be changedin this world, then it can ony happen through music.</p><br>
                 <a href="#" class="primary-button">Get Started</a>
             </div>
-            <div class="header-right">
+            </div>
+            <div class="header-right flex">
                 <img src="3rd.jpg" width="600px" alt="hero section">
             </div>
         </div>
@@ -67,26 +72,28 @@
             <a href="#" class="secondary-button">See all features <i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
         <!-- features option -->
+        
         <div class="feature-opt container flex">
             <div class="feature-box">
                 <img src="9th.jpg" height="150px" alt="Acostic Guitar logo">
-                <h3>Acostic & Semi-acostic Guitar</h3>
-                <p>it is the best way tognfxhtrxthrxdthrxdhrtdrtd get a acoustic.</p><br>
+                <h3>Acostic & Semi-acostic Guitars</h3>
+                <!-- <p>It's amazing what the acoustic Guitar acan bring to the picture.</p>--><br> 
                 <a href="#" class="secondary-button guitar">See all features <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
-            <div class="feature-box">
+            <div class="feature-box" style="border-right:2px solid #183b56; border-left:2px solid #183b56;">
                 <img src="10th.jpg" height="150px" alt="Acostic Guitar logo">
-                <h3>Acostic & Semi-acostic Guitar</h3>
-                <p>it is the best way tognfxhtrxthrxdthrxdhrtdrtd get a acoustic.</p><br>
+                <h3>Electric Guitars</h3>
+                <!-- <p>Without the Fender bass, there'd be no rock n' roll.</p> --><br>
                 <a href="#" class="secondary-button guitar">See all features <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
-            <div class="feature-box">
+            <div class="feature-box" >
                 <img src="11th.jpg" height="150px" alt="Acostic Guitar logo">
-                <h3>Acostic & Semi-acostic Guitar</h3>
-                <p>it is the best way tognfxhtrxthrxdthrxdhrtdrtd get a acoustic.</p><br>
+                <h3>Uklele Guitars</h3>
+                <!-- <p>If everyone played the ukulele, the world would be a better place.</p>--><br> 
                 <a href="#" class="secondary-button guitar">See all features <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
         </div>
+        <div class="pad">
         <div class="big-features container">
             <div class="flex big-feature-contain">
                 <div class="big-feature-img">
@@ -99,8 +106,8 @@
                 </div>
             </div>
         </div>
-        <div class="big-features container">
-            <div class="flex big-feature-contain">
+        <div class="big-features container" >
+            <div class="flex big-feature-contain" id="big-featuress">
                 <div class="big-feature-desc">
                     <h4>Problem Less</h4>
                     <h3>Offline Lessons</h3>
@@ -123,6 +130,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <!-- cta-sectiopn -->
         <div class="cta-section">
             <div class="container flex cta-section-container">
@@ -135,7 +143,7 @@
     </main>
     <!-- footers -->
     <footer>
-        <div class="last-footer container flex">
+        <div class="last-footer  flex">
             <div class="last-logo">
                 <div class="nav-logo flex">
                     <img src="2nd.png" alt="Company Logo">
@@ -166,7 +174,17 @@
     </footer>
     <!-- <sub-footer -->
     <div class="spacer flex">
-        <h4>© 2023 Online Retailer - Net Distribution Services Pvt Ltd</h5>
+        <h4>© 2023 Online Retailer-</h4> 
+        <h4>  Services Pvt Ltd</h5>
     </div>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLink = document.getElementById('nav-link');
+
+        toggleButton.addEventListener('click', () => {
+            navLink.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
