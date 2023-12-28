@@ -85,6 +85,9 @@
     .feature-box{
         width: 100%;
     }
+    .img{
+        padding: none;
+    }
 } 
 @media screen and (max-width: 479px) {
     .top-banner{

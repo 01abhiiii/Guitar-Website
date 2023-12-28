@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 :root{
-    --primary-text-color: #183b56 ;
+    --primary-text-color: #183b56;
     --secondary-text-color: #577592;
     --accent-color: #2294ed;
     --accent-color-dark: #1d69a3;
@@ -168,6 +168,9 @@ ul{
 }
 .big-feature-contain{
     gap: 40px;
+}
+.img{
+    padding-bottom: 100px;
 }
 .big-feature-desc{
     flex-direction: column;
